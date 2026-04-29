@@ -28,6 +28,8 @@ Published docs site:
 https://shridhar-sinha-demo.docs.buildwithfern.com
 ```
 
+Last production publish: April 29, 2026.
+
 To publish the production docs site, run:
 
 ```bash

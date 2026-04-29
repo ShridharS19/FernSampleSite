@@ -58,54 +58,41 @@ paths:
         - plant
       summary: Add a new plant to the store
       operationId: addPlant
-      x-fern-examples:
-        - name: Add a Fern Plant
-          request:
-            name: "Fern"
-            category: "Indoor"
-            tags: ["green", "leafy"]
-            status: "available"
-          response:
-            body:
-              id: 101
-              name: "Fern"
-              status: "available"
-              tags: ["green", "leafy"]
-          code-samples:
-            - sdk: python
-              name: Python Example
-              code: |
-                import requests
+      x-codeSamples:
+        - lang: python
+          label: Python Example
+          source: |
+            import requests
 
-                # API endpoint for adding a new plant
-                url = "https://api.plantstore.dev/v3/plant"
+            # API endpoint for adding a new plant
+            url = "https://api.plantstore.dev/v3/plant"
 
-                # Set headers
-                headers = {
-                    "Content-Type": "application/json"
-                }
+            # Set headers
+            headers = {
+                "Content-Type": "application/json"
+            }
 
-                # Prepare the plant data
-                payload = {
-                    "name": "Fern",
-                    "category": "Indoor",
-                    "tags": ["green", "leafy"],
-                    "status": "available"
-                }
+            # Prepare the plant data
+            payload = {
+                "name": "Fern",
+                "category": "Indoor",
+                "tags": ["green", "leafy"],
+                "status": "available"
+            }
 
-                # Make the POST request
-                try:
-                    response = requests.post(url, json=payload, headers=headers)
-                    response.raise_for_status()  # Raise an exception for bad status codes
+            # Make the POST request
+            try:
+                response = requests.post(url, json=payload, headers=headers)
+                response.raise_for_status()  # Raise an exception for bad status codes
 
-                    # Print the response
-                    plant_data = response.json()
-                    print(f"Plant added successfully!")
-                    print(f"Plant ID: {plant_data.get('id')}")
-                    print(f"Plant Name: {plant_data.get('name')}")
-                    print(f"Status: {plant_data.get('status')}")
-                except requests.exceptions.RequestException as e:
-                    print(f"Error adding plant: {e}")
+                # Print the response
+                plant_data = response.json()
+                print(f"Plant added successfully!")
+                print(f"Plant ID: {plant_data.get('id')}")
+                print(f"Plant Name: {plant_data.get('name')}")
+                print(f"Status: {plant_data.get('status')}")
+            except requests.exceptions.RequestException as e:
+                print(f"Error adding plant: {e}")
       requestBody:
         description: Details of the plant to add
         required: true
