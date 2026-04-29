@@ -1,0 +1,43 @@
+---
+title: Fern Work Sample Demo
+---
+You'll be modifying the contents of this repository to create a demo Fern website for a mock Plant Store company. In this scenario, we will be showing the Plant Store company this website, along with the repository used to generate the website, so be sure to keep the repository clean and ready to show a potential client.
+
+<Note>
+Prospective customers evaluate docs on ease of use, styling, and custom features.
+</Note>
+
+Follow the steps below to get started.
+
+<Steps>
+  <Step title="Installation">
+    Install the Fern CLI:
+    ```bash
+    npm install -g fern-api
+    ```
+    This will allow you to use Fern in the terminal to check and publish your demo site.
+  </Step>
+  <Step title="Project Naming">
+    Fern requires you to specify a unique organization name and website domain to generate a project.
+    First, update the organization name defined in `fern.config.json` to something other than `sample-demo-site`. As an example, you could use `firstName-lastName-demo`.
+    Next, update only the first subdomain of the `url` field defined in `docs.yml` to something other than `sample-demo-site`. The resulting URL should look something like:
+    ```
+    firstName-lastName-demo.docs.buildwithfern.com
+    ```
+  </Step>
+  <Step title="Complete the Work Sample">
+    - **Styling**
+    Match the landing page and header of this site as close as possible: [sample-demo-site-complete.docs.buildwithfern.com](https://sample-demo-site-complete.docs.buildwithfern.com)
+    
+    - **API**
+        1. Make sure the webhook payload appears
+        2. Add a Python code sample for the `POST /plant` endpoint
+        3. Add a sandbox environment to the API Reference / Explorer
+  </Step>
+  <Step title="Push to a GitHub Repository">
+    Publish the contents of this folder to a GitHub repository. Be sure to remove any unnecessary files.
+  </Step>
+    <Step title="Fix fern check">
+    Running <code>fern check</code> is giving an error. Your task is to find the problem, implement a fix, and pass <code>fern check</code>.
+  </Step>
+</Steps>

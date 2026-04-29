@@ -1,0 +1,11 @@
+api: 
+  specs: 
+    - openapi: openapi/api.yml
+
+groups:
+  ts-sdk:
+    generators:
+      - name: fernapi/fern-typescript-sdk
+        version: 3.63.7
+        github:
+          repository: fern-api/fern-typescript-sdk

@@ -1,0 +1,94 @@
+---
+layout: custom
+title: Welcome
+slug: /
+---
+
+<style>
+  {`
+      /* Hide all anchor links on the homepage */
+    [data-radix-popper-content-wrapper]:has(span[id^="radix-"]) {
+      display: none !important;
+    }
+
+    img[alt$=" upload"] {
+      display: none !important;
+    }
+  `}
+</style>
+
+{/* Keep standard markdown references so Fern uploads local image assets. */}
+![hero image upload](../assets/photo-1535025075092-5a1cf795130b.avif)
+![rainforest card upload](../assets/photo-1599940824219-e6aa9be5fba2.avif)
+![plant encyclopedia card upload](../assets/premium_photo-1664526284288-8c48dd6c38a7.avif)
+
+<div class="hero-section">
+  <img
+    src="../assets/photo-1535025075092-5a1cf795130b.avif"
+    alt="hero image"
+    noZoom
+  />
+  <div class="hero-content">
+    <div class="hero-header">
+      <h1>Welcome</h1>
+    </div>
+    <div class="hero-subtitle">
+      <p>Explore the wonders of plants and the beauty of nature. Learn how to nurture your garden, invite natural biodiversity into your space, and deepen your connection to the green world around you.</p>
+    </div>
+    <div class="hero-button">
+      <Button class="get-started-btn" large="true" href="/#step-into-the-plant-world">GET STARTED</Button>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-content">
+    <h2 id="step-into-the-plant-world">Step Into the Plant World</h2>
+    <p>Begin your journey into the fascinating world of plants. Discover how greenery shapes our planet, learn to care for all kinds of flora, and uncover the wonders that await in every leaf and stem.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-content">
+    <div class="sqsp-card-group">
+      <div class="sqsp-card">
+        <a class="sqsp-card-link" href="/#welcome">
+          <div class="sqsp-card-asset">
+            <img
+              src="../assets/photo-1599940824219-e6aa9be5fba2.avif"
+              alt="Web platform"
+              class="sqsp-card-image"
+              noZoom
+            />
+          </div>
+          <div class="sqsp-card-content">
+            <h3 id="rainforest-exploration">Rainforest Exploration</h3>
+            <p>Dive into the world's lushest ecosystems and discover the richness of rainforests. Learn about their biodiversity, climate role, and the unique plants and animals that call the rainforest home.</p>
+          </div>
+          <svg class="sqsp-card-arrow" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.25 18.15H12L19 11.15L12 4.14999H9.25L15.25 10.15H3V12.15H15.25L9.25 18.15Z" fill="white" />
+          </svg>
+        </a>
+      </div>
+      <div class="sqsp-card">
+        <a class="sqsp-card-link" href="/#welcome">
+          <div class="sqsp-card-asset">
+            <img
+              src="../assets/premium_photo-1664526284288-8c48dd6c38a7.avif"
+              alt="Plants"
+              class="sqsp-card-image"
+              noZoom
+            />
+          </div>
+          <div class="sqsp-card-content">
+            <h3 id="plant-encyclopedia">Plant Encyclopedia</h3>
+            <p>Discover a curated encyclopedia of plants from around the world. Learn about plant care, identification, habitats, and how to create a thriving and diverse garden in your own space.</p>
+          </div>
+          <svg class="sqsp-card-arrow" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.25 18.15H12L19 11.15L12 4.14999H9.25L15.25 10.15H3V12.15H15.25L9.25 18.15Z" fill="white" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
