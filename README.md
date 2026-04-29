@@ -20,22 +20,29 @@ fern docs dev
 
 `fern docs dev` starts a local preview so you can make changes and quickly check them in the browser.
 
-## Previewing The Site## Previewing The Site
+## Publishing The Site
 
-Latest hosted preview:
+Published docs site:
 
 ```text
-https://shridhar-sinha-demo-preview-1ef79826-f7c8-4399-b746-26768a2167.docs.buildwithfern.com
+https://shridhar-sinha-demo.docs.buildwithfern.com
 ```
 
-To create a hosted preview, run:
+To publish the production docs site, run:
+
+```bash
+cd fern
+fern generate --docs
+```
+
+Fern will ask for confirmation before publishing to production.
+
+To create a hosted preview without affecting the production site, run:
 
 ```bash
 cd fern
 fern generate --docs --preview
 ```
-
-Fern will print a preview URL in the terminal. Use that link to review the version that would be shared externally.
 
 ## Where To Make Changes
 
@@ -69,7 +76,7 @@ Before sharing or publishing changes, run:
 ```bash
 cd fern
 fern check --warnings
-fern generate --docs --preview
+fern generate --docs
 ```
 
-If both commands pass and the hosted preview looks correct, the project is ready to hand off.
+If both commands pass and the hosted site looks correct, the project is ready to hand off.

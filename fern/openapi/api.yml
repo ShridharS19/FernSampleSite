@@ -59,7 +59,7 @@ paths:
       summary: Add a new plant to the store
       operationId: addPlant
       x-fern-examples:
-        - name: Successful Plant Addition
+        - name: Add a Fern Plant
           request:
             name: "Fern"
             category: "Indoor"
@@ -115,7 +115,7 @@ paths:
               $ref: "#/components/schemas/Plant"
             examples:
               example1:
-                summary: Successful Plant Addition
+                summary: Add a Fern Plant
                 value:
                   name: "Fern"
                   category: "Indoor"
@@ -152,7 +152,7 @@ paths:
               $ref: "#/components/schemas/Plant"
             examples:
               example1:
-                summary: Successful Plant Update
+                summary: Update plant status
                 value:
                   name: "Fern"
                   category: "Indoor"
@@ -376,12 +376,12 @@ webhooks:
                 summary: Plant created payload
                 value:
                   event: plant.created
-                  timestamp: "2026-04-29T12:00:00Z"
+                  timestamp: "2024-06-01T14:22:31Z"
                   data:
-                    id: 101
-                    name: "Fern"
+                    id: 102
+                    name: "Golden Pothos"
                     status: "available"
-                    tags: ["green", "leafy"]
+                    tags: ["green", "hanging", "easy-care"]
       responses:
         "200":
           description: Webhook received successfully

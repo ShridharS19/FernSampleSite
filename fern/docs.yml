@@ -63,7 +63,7 @@ colors:
   background:
     light: "#FFFFFF"
   header-background:
-    light: "#000000"
+    light: "#FFFFFF"
     dark: "#000000"
 
 page-actions:
